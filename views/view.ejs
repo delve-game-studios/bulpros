@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create User</title>
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<style type="text/css">
+		body {
+			padding-top: 80px;
+		}
+	</style>
+</head>
+<body>
+<div class="container-fluid">
+	<!-- <div class="row"> -->
+		<div class="col-md-8 col-md-offset-3">
+<% if(!!message && message.length > 0) { %>
+			<div class="alert <%= code %>"><%= message %></div>
+<% } %>
+			
+				<div class="col-md-12 form-group">
+					<label>Username: </label><span> <%= user.username %></span>
+				</div>
+				<div class="col-md-12 form-group">
+					<label>First Name: </label><span> <%= user.firstName %></span>
+				</div>
+				<div class="col-md-12 form-group">
+					<label>Last Name: </label><span> <%= user.lastName %></span>
+				</div>
+				<div class="col-md-6 form-group">
+					<a class="btn btn-default" href="/">Back to list</a>
+				</div>
+				<div class="col-md-6 form-group">
+					<a class="btn btn-warning" href="/edit/<%= user._id %>">Edit</a>
+				</div>
+			
+		</div>
+	<!-- </div> -->
+</div>
+</body>
+</html>

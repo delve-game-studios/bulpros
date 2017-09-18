@@ -1,0 +1,24 @@
+{
+  "name": "bulpros",
+  "version": "1.0.0",
+  "description": "Test application for BulPros Ltd.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Milan Vugrinchev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "hapi": "^16.6.0",
+    "joi": "^11.0.1",
+    "mongoose": "^4.11.11",
+    "morgan": "^1.8.2",
+    "react": "^15.6.1"
+  }
+}
